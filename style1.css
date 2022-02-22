@@ -30,20 +30,15 @@ header {
   margin: 0 auto;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.any {
-  margin-top: 10px;
-  text-align: center;
-  font-family: "Noto Sans Display", sans-serif;
-  color: white;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .menu {
+  color: white;
   margin-top: 70px;
   text-align: center;
   font-size: 60px;
-  color: white;
   font-family: "Noto Sans Display", sans-serif;
 }
 
@@ -59,6 +54,7 @@ header {
 .contact:hover {
   font-size: 52px;
 }
+
 a:visited {
   color: white;
   text-decoration: none;
@@ -80,12 +76,6 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    margin-left: 4px;
-    margin-right: 4px;
-    font-size: large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: x-large;
@@ -104,6 +94,7 @@ a:link {
   }
 
   a:visited {
+    color: white;
     text-decoration: none;
   }
 
@@ -121,10 +112,6 @@ a:link {
   .avatar {
     height: 180px;
     width: 180px;
-  }
-
-  .any {
-    font-size: large;
   }
 
   .menu {
@@ -165,10 +152,6 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    font-size: large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: x-large;
@@ -187,6 +170,7 @@ a:link {
   }
 
   a:visited {
+    color: white;
     text-decoration: none;
   }
 }
@@ -201,10 +185,6 @@ a:link {
   .avatar {
     height: 180px;
     width: 180px;
-  }
-
-  .any {
-    font-size: x-large;
   }
 
   .menu {
@@ -233,20 +213,19 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: xxx-large;
   }
 
   a:visited {
+    color: white;
     text-decoration: none;
   }
 
   a:link {
+    color: white;
+    font-weight: bold;
     text-decoration: none;
   }
 }
