@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+} /*con esto lo que hacemos es sacarle los puntitos del costado a las listas o los numeros si fuera OL*/
+
+button {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+}
+
+.list li a {
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  display: block;
+  width: 90px;
+  padding: 10px 15px;
+} /*esto  indica que todos los elementos a que estén dentro de los elementos li que estén dentro de la clase list tendrán las propiedades entre curly braces*/
+
+.list li a:hover {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+  color: blue;
+} /*esto es apra cuando pasamos el mouse por list*/
+
+.list > li {
+  float: left;
+} /*esto quiere decir que los li directos que esten dentro de la clase list tendran esas propiedades*/
+
+.list li ul {
+  display: none;
+  position: absolute;
+} /*con esto los submenus desaparecen*/
+
+.list li:hover > ul {
+  display: block;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  height: 36px;
+  text-align: center;
+  font-family: "monofett", cursive;
+  background-color: turquoise;
+  margin-top: -170px;
+  color: black;
+  padding: 0;
+  padding-top: -50px;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -39px;
+  margin-bottom: 5px;
+  margin-right: 593px;
+}
+
+.any {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.keypad {
+  text-align: center;
+  margin-top: 70px;
+}
+.wp {
+  margin: 15px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+}
+
+.in {
+  margin: 15px;
+  height: 90px;
+  width: 90px;
+  border-radius: 800px;
+}
+
+.out {
+  margin: 15px;
+  height: 90px;
+  width: 90px;
+  border-radius: 800px;
+}
+
+.awp {
+  text-decoration: none;
+}
+.ain {
+  text-decoration: none;
+}
+.out {
+  text-decoration: none;
+}
+
+.bye {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.hand {
+  font-size: 70px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+    padding: 0%;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .avatar {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+  .keypad {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .wp {
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .in {
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .out {
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .bye {
+    margin-top: 12px;
+    font-size: x-large;
+  }
+
+  .hand {
+    font-size: 50px;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+  .keypad {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .bye {
+    margin-top: 20px;
+    font-size: xx-large;
+  }
+
+  .hand {
+    font-size: 70px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+  .keypad {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .bye {
+    margin-top: 20px;
+    font-size: xx-large;
+  }
+
+  .hand {
+    font-size: 70px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+  .keypad {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .bye {
+    margin-top: 20px;
+    font-size: xx-large;
+  }
+
+  .hand {
+    font-size: 70px;
+  }
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+  .keypad {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .bye {
+    margin-top: 20px;
+    font-size: xx-large;
+  }
+
+  .hand {
+    font-size: 70px;
+  }
+}

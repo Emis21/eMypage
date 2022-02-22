@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  font-family: "monofett", cursive;
+  background-color: turquoise;
+  margin-top: -5px;
+  color: black;
+  font-size: xxx-large;
+  padding: 0;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.any {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.menu {
+  text-align: center;
+}
+
+.esp,
+.eng {
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.eng:hover {
+  height: 170px;
+  width: 170px;
+}
+
+.esp:hover {
+  height: 170px;
+  width: 170px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .esp,
+  .eng {
+    height: 120px;
+    width: 120px;
+    margin: 14px;
+  }
+
+  .eng:hover {
+    height: 121px;
+    width: 121px;
+  }
+
+  .esp:hover {
+    height: 121px;
+    width: 121px;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .esp,
+  .eng {
+    height: 120px;
+    width: 120px;
+    margin: 20px;
+  }
+
+  .any {
+    font-size: large;
+  }
+
+  .menu {
+    margin-top: 10px;
+    font-size: x-large;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+
+  .menu {
+    margin-top: 10px;
+    font-size: x-large;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+
+  .menu {
+    margin-top: 10px;
+    font-size: xxx-large;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+
+  .menu {
+    margin-top: 10px;
+    font-size: xxx-large;
+  }
+}

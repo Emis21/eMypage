@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+ul {
+  list-style: none;
+} /*con esto lo que hacemos es sacarle los puntitos del costado a las listas o los numeros si fuera OL*/
+
+button {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+}
+
+.list li a {
+  color: white;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  display: block;
+  width: 90px;
+  padding: 10px 15px;
+} /*esto  indica que todos los elementos a que estén dentro de los elementos li que estén dentro de la clase list tendrán las propiedades entre curly braces*/
+
+.list li a:hover {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+  color: blue;
+} /*esto es apra cuando pasamos el mouse por list*/
+
+.list > li {
+  float: left;
+} /*esto quiere decir que los li directos que esten dentro de la clase list tendran esas propiedades*/
+
+.list li ul {
+  display: none;
+  position: absolute;
+} /*con esto los submenus desaparecen*/
+
+.list li:hover > ul {
+  display: block;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+header {
+  text-align: center;
+  font-family: "monofett", cursive;
+  background-color: turquoise;
+  margin-top: -170px;
+  color: black;
+  font-size: xxx-large;
+  padding: 0;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -39px;
+  margin-bottom: 5px;
+  margin-right: 576px;
+}
+
+.any {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.tipa1 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+  margin-top: 30px;
+}
+
+.p1 {
+  font-family: "Noto Sans Display", sans-serif;
+  margin-top: 35px;
+  font-size: large;
+  text-align: center;
+  color: white;
+  margin-right: 145px;
+  margin-left: 145px;
+  margin-bottom: 30px;
+  line-height: 37px;
+}
+
+.kid {
+  color: yellow;
+  opacity: 0.9;
+}
+.trick {
+  text-decoration: underline;
+}
+.hat {
+  font-size: 30px;
+}
+.world {
+  font-size: 30px;
+}
+.poli {
+  font-size: 30px;
+}
+.uocra {
+  font-size: 30px;
+}
+
+.hobbies {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: large;
+  color: white;
+  margin-right: 145px;
+  margin-left: 145px;
+  line-height: 37px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .avatar {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .avatar {
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+  .tipa1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+  }
+
+  .p1 {
+    margin-top: 20px;
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hobbies {
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+  .tipa1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+  }
+
+  .p1 {
+    margin-top: 20px;
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hobbies {
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+  .tipa1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+  }
+
+  .p1 {
+    margin-top: 20px;
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hobbies {
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: large;
+  }
+  .tipa1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+  }
+
+  .p1 {
+    margin-top: 20px;
+    font-size: medium;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hobbies {
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+  .any {
+    font-size: large;
+  }
+  .tipa1 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+  }
+
+  .p1 {
+    margin-top: 20px;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hobbies {
+    margin-bottom: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: large;
+  }
+}

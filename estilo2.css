@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+} /*con esto lo que hacemos es sacarle los puntitos del costado a las listas o los numeros si fuera OL*/
+
+button {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+}
+
+.list li a {
+  color: white;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  display: block;
+  width: 90px;
+  padding: 10px 15px;
+} /*esto  indica que todos los elementos a que estén dentro de los elementos li que estén dentro de la clase list tendrán las propiedades entre curly braces*/
+
+.list li a:hover {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: turquoise;
+  color: blue;
+} /*esto es apra cuando pasamos el mouse por list*/
+
+.list > li {
+  float: left;
+} /*esto quiere decir que los li directos que esten dentro de la clase list tendran esas propiedades*/
+
+.list li ul {
+  display: none;
+  position: absolute;
+} /*con esto los submenus desaparecen*/
+
+.list li:hover > ul {
+  display: block;
+}
+
+header {
+  height: 40px;
+  text-align: center;
+  font-family: "monofett", cursive;
+  background-color: turquoise;
+  color: black;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -39px;
+  margin-bottom: 5px;
+  margin-right: 576px;
+}
+
+.any {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+  color: white;
+}
+
+.menu {
+  height: fit-content;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+.coti {
+  text-align: center;
+  border-radius: 10px;
+}
+.lati {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.lati,
+.coti {
+  color: white;
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  float: left;
+  display: inline;
+  width: 48%;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+.courses,
+.langua {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: large;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  line-height: 35px;
+  float: left;
+  display: inline;
+  width: 48%;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  header {
+    margin-top: -10px;
+    font-size: xx-large;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .avatar {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-bottom: 0%;
+  }
+
+  .lati,
+  .coti {
+    margin-top: -5px;
+    font-size: x-large;
+  }
+
+  .courses,
+  .langua {
+    font-size: small;
+    margin-top: 15px;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    margin-top: -10px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 12px;
+  }
+
+  .any {
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-bottom: 0%;
+  }
+
+  .lati,
+  .coti {
+    margin-top: -5px;
+    font-size: x-large;
+  }
+
+  .courses,
+  .langua {
+    font-size: small;
+    margin-top: 15px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin-top: -10px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-bottom: 0%;
+  }
+
+  .lati,
+  .coti {
+    margin-top: -5px;
+    font-size: x-large;
+  }
+
+  .courses,
+  .langua {
+    font-size: small;
+    margin-top: 15px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+
+  .menu {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-bottom: 0%;
+  }
+
+  .lati,
+  .coti {
+    margin-top: -5px;
+    font-size: x-large;
+  }
+
+  .courses,
+  .langua {
+    font-size: large;
+    margin-top: 15px;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  header {
+    margin-top: -1px;
+    font-size: xx-large;
+  }
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
+  }
+
+  .any {
+    font-size: x-large;
+  }
+
+  .menu {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-bottom: 0%;
+  }
+
+  .lati,
+  .coti {
+    margin-top: -5px;
+    font-size: x-large;
+  }
+
+  .courses,
+  .langua {
+    font-size: large;
+    margin-top: 15px;
+  }
+}
