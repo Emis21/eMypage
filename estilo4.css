@@ -85,13 +85,6 @@ header {
   margin-right: 593px;
 }
 
-.any {
-  color: white;
-  margin-top: 10px;
-  text-align: center;
-  font-family: "Noto Sans Display", sans-serif;
-}
-
 .keypad {
   text-align: center;
   margin-top: 70px;
@@ -158,9 +151,6 @@ header {
     width: 180px;
   }
 
-  .any {
-    font-size: large;
-  }
   .keypad {
     text-align: center;
     margin-top: 20px;
@@ -205,9 +195,6 @@ header {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
   .keypad {
     text-align: center;
     margin-top: 30px;
@@ -237,9 +224,6 @@ header {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
   .keypad {
     text-align: center;
     margin-top: 30px;
@@ -269,10 +253,7 @@ header {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
-  .keypad {
+   .keypad {
     text-align: center;
     margin-top: 30px;
   }
@@ -300,9 +281,6 @@ header {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
   .keypad {
     text-align: center;
     margin-top: 30px;
