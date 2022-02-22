@@ -34,13 +34,6 @@ header {
   margin-left: auto;
 }
 
-.any {
-  color: white;
-  margin-top: 10px;
-  text-align: center;
-  font-family: "Noto Sans Display", sans-serif;
-}
-
 .menu {
   color: white;
   margin-top: 70px;
@@ -83,12 +76,6 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    margin-left: 4px;
-    margin-right: 4px;
-    font-size: large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: x-large;
@@ -125,10 +112,6 @@ a:link {
   .avatar {
     height: 180px;
     width: 180px;
-  }
-
-  .any {
-    font-size: large;
   }
 
   .menu {
@@ -169,10 +152,6 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    font-size: large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: x-large;
@@ -208,10 +187,6 @@ a:link {
     width: 180px;
   }
 
-  .any {
-    font-size: x-large;
-  }
-
   .menu {
     margin-top: 10px;
     font-size: xxx-large;
@@ -236,10 +211,6 @@ a:link {
   .avatar {
     height: 180px;
     width: 180px;
-  }
-
-  .any {
-    font-size: x-large;
   }
 
   .menu {
